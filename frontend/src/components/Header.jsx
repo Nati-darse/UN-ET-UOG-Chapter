@@ -18,7 +18,9 @@ const Header = () => {
       {/* Logo and Title */}
       <div className="flex items-center">
         <img src={logo} alt="UN Logo" className="h-24 " />
-        <h1 className="text-2xl font-bold text-blue-500">UN-ET UOG Chapter</h1>
+        <a href='/'
+        className="text-2xl font-bold text-blue-500">UN-ET UOG Chapter
+        </a>
       </div>
 
       {/* Hamburger Icon (Always Visible) */}
@@ -72,9 +74,9 @@ const Header = () => {
           </svg>
         </button>
         <ul className="flex flex-col space-y-2 p-6 text-center">
-          <li><a href="#about" className="hover:text-blue-500">About Us</a></li>
-          <li><a href="#teams" className="hover:text-blue-500">Teams</a></li>
-          <li><a href="#events" className="hover:text-blue-500">Events</a></li>
+          <li><a href="/about" className="hover:text-blue-500">About Us</a></li>
+          <li><a href="/teams" className="hover:text-blue-500">Teams</a></li>
+          <li><a href="/events" className="hover:text-blue-500">Events</a></li>
           <li>
             <button onClick={toggleDropdown} className="hover:text-blue-500 focus:outline-none">
               News & Resources

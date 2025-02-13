@@ -70,7 +70,7 @@ const AboutUs = () => {
         <p className="text-lg max-w-2xl mx-auto mb-6">
           Be a part of our journey towards creating a better world. Join UN-ET UOG Chapter today!
         </p>
-        <a href="#join" className="bg-yellow-500 text-blue-900 px-6 py-3 rounded-md font-bold hover:bg-yellow-400 transition">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk15_qIaFj-MXxpxd3h5VIRFJ2dYjMHSTaX7W3C_00lJqY0A/viewform" className="bg-yellow-500 text-blue-900 px-6 py-3 rounded-md font-bold hover:bg-yellow-400 transition">
           Join Us Now
         </a>
       </div>

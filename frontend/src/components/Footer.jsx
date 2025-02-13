@@ -8,16 +8,19 @@ const Footer = () => {
         {/* Top Section */}
         <div className="flex flex-col md:flex-row md:justify-between items-center mb-6 gap-6 md:gap-0">
           {/* Logo */}
-          <div className="text-xl font-bold text-center md:text-left">
+          <div >
+            <a href="/"
+            className="text-xl font-bold text-center md:text-left">
             UN-ET UOG Charter
+            </a>
           </div>
 
           {/* Navigation Links */}
           <nav className="flex flex-wrap justify-center gap-4 md:gap-6 text-,md">
             <a href="/About" className="hover:text-gray-400">About Us</a>
             <a href="/teams" className="hover:text-gray-400">Our Teams</a>
-            <a href="/event" className="hover:text-gray-400">Events</a>
-            <a href="" className="hover:text-gray-400">Join Us</a>
+            <a href="/Events" className="hover:text-gray-400">Events</a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk15_qIaFj-MXxpxd3h5VIRFJ2dYjMHSTaX7W3C_00lJqY0A/viewform" className="hover:text-gray-400">Join Us</a>
             <a href="/contact" className="hover:text-gray-400">Contact Us</a>
             <a href="#" className="hover:text-gray-400">Resources</a>
           </nav>

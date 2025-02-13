@@ -1,19 +1,25 @@
 import React, { useState } from "react";
+import Header from '../components/Header'
 import Footer from "../components/Footer";
 
 // Dummy data for events
 const eventsData = [
   {
     id: 1,
-    title: "🌟 A Remarkable Afternoon: The Final Round Debate Competition! 🌟",
-    image: ["https://media.licdn.com/dms/image/v2/D4E22AQE5GnKEl5G6xg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1733805578901?e=1742428800&v=beta&t=izF-XR2deCBUZZeqoK6kAVX2uaN0NIYC-1NPEkL9dj4",
-    "https://media.licdn.com/dms/image/v2/D4E22AQEehmmnovpxUQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1733805576130?e=1742428800&v=beta&t=YR6w1aQqqFFbExS3P7PQqubihue9hcQ0YXxW_hxVqak",
-    "https://media.licdn.com/dms/image/v2/D4E22AQHP4Y6e7PGqLA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1733805574567?e=1742428800&v=beta&t=SSiza1cLnDz4pzFaqddeB1RZNc8SCNGh1cl-s7fHbi8",],
-    description:
-      "On December 4, 2024, the UNA-ET University of Gondar Chapter hosted the highly anticipated Final Round Debate Competition at Maraki Campus Alumni Hall.",
-    details:
-      " 🎤 Debate Topic:\nShould Local Justice Mechanisms Take Precedence Over International Interventions in Addressing Conflict-Related Gender-Based Violence?\n\nOur skilled debaters showcased exceptional arguments, critical thinking, and teamwork, leaving the audience inspired and engaged.\n\n🌟 Judges Panel:\nAssistant Professor Gashaw Sisay\nMr. Fiqadu\nMr. Eyasu\n\n🙏 A heartfelt thank you to our esteemed judges for their invaluable insights, to all the participants for their dedication, and to our wonderful audience for their enthusiastic support.\n\nTogether, we celebrated the power of youth voices and constructive dialogue. Stay tuned for more impactful events!",
     
+    title: " UNA-ET UOG Chapter Launch: Igniting Youth Action for SDGs!",
+    image: ["https://media.licdn.com/dms/image/v2/D4E22AQHM8twVdXenPA/feedshare-shrink_1280/feedshare-shrink_1280/0/1714080971515?e=1742428800&v=beta&t=kNnuSHfDtaqJNsBRIdXFMdCtY1JTlAPF2S_MkjwpU0o",
+      "https://media.licdn.com/dms/image/v2/D4E22AQEwDkl1WRA_oQ/feedshare-shrink_800/feedshare-shrink_800/0/1714080971204?e=1742428800&v=beta&t=Kv2l_u3m7ZgxPM7vi0Zw4ufKptSEa9a2vXXLHWDg3ug",
+      "https://media.licdn.com/dms/image/v2/D4E22AQGBg1Wb0ukwRw/feedshare-shrink_1280/feedshare-shrink_1280/0/1714080970992?e=1742428800&v=beta&t=hLkd8Lii_VZQ3PbLLLjUMIw4RpRR7vD7Uj1qRd37XxQ",
+      "https://media.licdn.com/dms/image/v2/D4E22AQEXHjoVKRVpRA/feedshare-shrink_800/feedshare-shrink_800/0/1714080971040?e=1742428800&v=beta&t=urDojE2Dm1MVaVxCjp3zayxU7inAy9_KYHIOy-qfDsg",
+      "https://media.licdn.com/dms/image/v2/D4E22AQEA1TbLuMCgog/feedshare-shrink_1280/feedshare-shrink_1280/0/1714080971495?e=1742428800&v=beta&t=iqgI9PjGD_rnvMBbSSjob-W4GJUB889KsW-EtjpFw_Q",
+    ],
+    description:
+      "The UNA-ET UOG Chapter's impactful launch brought together students, faculty, and esteemed guests for a day dedicated to empowering youth for a sustainable future in Ethiopia.",
+      details:
+        "🌟 Prior to the Launch:\nUNA-ET UOG members displayed compassion through volunteering at the Mena Home for the Elderly and Disabled. A campus blood donation drive raised awareness of the importance of giving back.\n\n🚀 The Launch Event:\nA thought-provoking panel discussion featuring prominent figures like Dr. Tefera Eshete (University of Gondar Law School Staff), Mr. Hiruy G/giorgis (High Court Judge & University Lecturer), and Mr. Messay Kebede (University of Gondar TV & Production Head) explored how youth can contribute to achieving the SDGs in Ethiopia. An engaging SDG awareness game tested the audience's knowledge and sparked meaningful conversations.\n\n🎉 Celebrating Success:\nFollowing the event, chapter members enjoyed a celebratory dinner hosted by chapter coordinator Mr. Yalew Melaku. The UNA-ET UOG Chapter launch ignited a spirit of social responsibility and collaboration, paving the way for future initiatives empowering young Ethiopians to be active participants in achieving the SDGs!\n\n#UNAET #SDGs #Ethiopia #YouthAction\n\n🙌 Special Thanks to: Hailemariam Belay, Yosef Workelule, Loyd Tessema, Yonas Yizezew, Nahom Tseda, Bethlehem Tadesse, Habib Oumer, Liyat Kefyalew, Yohannes Getaneh.",
+ 
+   
   },
   {
     id: 2,
@@ -45,18 +51,15 @@ const eventsData = [
   },
   {
     id: 4,
-    title: " UNA-ET UOG Chapter Launch: Igniting Youth Action for SDGs!",
-    image: ["https://media.licdn.com/dms/image/v2/D4E22AQHM8twVdXenPA/feedshare-shrink_1280/feedshare-shrink_1280/0/1714080971515?e=1742428800&v=beta&t=kNnuSHfDtaqJNsBRIdXFMdCtY1JTlAPF2S_MkjwpU0o",
-      "https://media.licdn.com/dms/image/v2/D4E22AQEwDkl1WRA_oQ/feedshare-shrink_800/feedshare-shrink_800/0/1714080971204?e=1742428800&v=beta&t=Kv2l_u3m7ZgxPM7vi0Zw4ufKptSEa9a2vXXLHWDg3ug",
-      "https://media.licdn.com/dms/image/v2/D4E22AQGBg1Wb0ukwRw/feedshare-shrink_1280/feedshare-shrink_1280/0/1714080970992?e=1742428800&v=beta&t=hLkd8Lii_VZQ3PbLLLjUMIw4RpRR7vD7Uj1qRd37XxQ",
-      "https://media.licdn.com/dms/image/v2/D4E22AQEXHjoVKRVpRA/feedshare-shrink_800/feedshare-shrink_800/0/1714080971040?e=1742428800&v=beta&t=urDojE2Dm1MVaVxCjp3zayxU7inAy9_KYHIOy-qfDsg",
-      "https://media.licdn.com/dms/image/v2/D4E22AQEA1TbLuMCgog/feedshare-shrink_1280/feedshare-shrink_1280/0/1714080971495?e=1742428800&v=beta&t=iqgI9PjGD_rnvMBbSSjob-W4GJUB889KsW-EtjpFw_Q",
-    ],
+    title: "🌟 A Remarkable Afternoon: The Final Round Debate Competition! 🌟",
+    image: ["https://media.licdn.com/dms/image/v2/D4E22AQE5GnKEl5G6xg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1733805578901?e=1742428800&v=beta&t=izF-XR2deCBUZZeqoK6kAVX2uaN0NIYC-1NPEkL9dj4",
+    "https://media.licdn.com/dms/image/v2/D4E22AQEehmmnovpxUQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1733805576130?e=1742428800&v=beta&t=YR6w1aQqqFFbExS3P7PQqubihue9hcQ0YXxW_hxVqak",
+    "https://media.licdn.com/dms/image/v2/D4E22AQHP4Y6e7PGqLA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1733805574567?e=1742428800&v=beta&t=SSiza1cLnDz4pzFaqddeB1RZNc8SCNGh1cl-s7fHbi8",],
     description:
-      "The UNA-ET UOG Chapter's impactful launch brought together students, faculty, and esteemed guests for a day dedicated to empowering youth for a sustainable future in Ethiopia.",
-      details:
-        "🌟 Prior to the Launch:\nUNA-ET UOG members displayed compassion through volunteering at the Mena Home for the Elderly and Disabled. A campus blood donation drive raised awareness of the importance of giving back.\n\n🚀 The Launch Event:\nA thought-provoking panel discussion featuring prominent figures like Dr. Tefera Eshete (University of Gondar Law School Staff), Mr. Hiruy G/giorgis (High Court Judge & University Lecturer), and Mr. Messay Kebede (University of Gondar TV & Production Head) explored how youth can contribute to achieving the SDGs in Ethiopia. An engaging SDG awareness game tested the audience's knowledge and sparked meaningful conversations.\n\n🎉 Celebrating Success:\nFollowing the event, chapter members enjoyed a celebratory dinner hosted by chapter coordinator Mr. Yalew Melaku. The UNA-ET UOG Chapter launch ignited a spirit of social responsibility and collaboration, paving the way for future initiatives empowering young Ethiopians to be active participants in achieving the SDGs!\n\n#UNAET #SDGs #Ethiopia #YouthAction\n\n🙌 Special Thanks to: Hailemariam Belay, Yosef Workelule, Loyd Tessema, Yonas Yizezew, Nahom Tseda, Bethlehem Tadesse, Habib Oumer, Liyat Kefyalew, Yohannes Getaneh.",
-  },
+      "On December 4, 2024, the UNA-ET University of Gondar Chapter hosted the highly anticipated Final Round Debate Competition at Maraki Campus Alumni Hall.",
+    details:
+      " 🎤 Debate Topic:\nShould Local Justice Mechanisms Take Precedence Over International Interventions in Addressing Conflict-Related Gender-Based Violence?\n\nOur skilled debaters showcased exceptional arguments, critical thinking, and teamwork, leaving the audience inspired and engaged.\n\n🌟 Judges Panel:\nAssistant Professor Gashaw Sisay\nMr. Fiqadu\nMr. Eyasu\n\n🙏 A heartfelt thank you to our esteemed judges for their invaluable insights, to all the participants for their dedication, and to our wonderful audience for their enthusiastic support.\n\nTogether, we celebrated the power of youth voices and constructive dialogue. Stay tuned for more impactful events!",
+     },
 ];
 
 const EventsPage = () => {
@@ -68,7 +71,8 @@ const EventsPage = () => {
 
   return (
     <>
-    <div className="bg-blue-100 py-12">
+    <Header />
+    <div className="bg-white-100 py-12">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-center text-blue-900 mb-8">
            Events

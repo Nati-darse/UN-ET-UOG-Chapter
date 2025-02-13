@@ -4,7 +4,7 @@ import img2 from "../assets/4675.jpg";
 import img3 from "../assets/16.jpg";
 import joinUsImg from "../assets/joinus.svg";
 import frameImg from "../assets/1.jpg";
-import arrow from "../assets/green-curve-shape-arrow.svg"
+import arrow from "../assets/green-curve-shape-arrow.svg";
 import { FaStar, FaHeart, FaRocket } from "react-icons/fa"; // For decorative Icons
 import { BsArrowDownLeft, BsArrowUpRight } from "react-icons/bs"; // Zig-zag arrows
 
@@ -21,20 +21,20 @@ const HeroSection = () => {
           <span className="block text-blue-800">UN-ET UOG</span>
           <span className="block">Chapter</span>
         </h1>
-            <div className="border-b-4 border-blue-400 w-80  mx-auto md:mx-0 mt-2 mb-4"></div>
+        <div className="border-b-4 border-blue-400 w-80  mx-auto md:mx-0 mt-2 mb-4"></div>
         <p className="text-gray-600 text-lg mb-6">
           Join a vibrant community at the University of Gondar, dedicated to
           leadership, global awareness, and engagement among students.
         </p>
         <div className="flex items-center gap-6 justify-center md:justify-start">
           <a
-            href="#"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdk15_qIaFj-MXxpxd3h5VIRFJ2dYjMHSTaX7W3C_00lJqY0A/viewform"
             className="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition"
           >
             Join Us Now
           </a>
           <a
-            href="#"
+            href="/about "
             className="text-blue-600 text-lg flex items-center hover:underline"
           >
             Discover More
@@ -55,7 +55,11 @@ const HeroSection = () => {
         </div>
         {/* Framed Image on Upper Right */}
         <div className="absolute top-[-50px] right-[-120px] hidden md:block border-4 border-blue-300 p-2 rounded-full shadow-lg">
-          <img src={frameImg} alt="Framed Content" className="w-40 h-52 object-cover rounded-full" />
+          <img
+            src={frameImg}
+            alt="Framed Content"
+            className="w-40 h-52 object-cover rounded-full"
+          />
         </div>
       </div>
 
@@ -72,14 +76,26 @@ const HeroSection = () => {
 
           {/* Main Image with Vertical Space */}
           <div className="relative w-full rounded-2xl overflow-hidden">
-            <img src={img1} alt="Main scene" className="w-full h-2/3 object-cover rounded-xl mt-20 mb-20" />
+            <img
+              src={img1}
+              alt="Main scene"
+              className="w-full h-2/3 object-cover rounded-xl mt-20 mb-20"
+            />
           </div>
           {/* Overlapping Images */}
           <div className="absolute top-4 right-4 w-72 h-32 rounded-xl overflow-hidden border-4 border-blue-100 shadow-md">
-            <img src={img2} alt="Small overlay" className="w-full h-full object-cover" />
+            <img
+              src={img2}
+              alt="Small overlay"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="absolute bottom-4 left-4 w-72 h-40 rounded-xl overflow-hidden border-4 border-blue-100 shadow-md">
-            <img src={img3} alt="Small overlay" className="w-full h-full object-cover" />
+            <img
+              src={img3}
+              alt="Small overlay"
+              className="w-full h-full object-cover"
+            />
           </div>
           {/* Custom Join Us Image */}
           <div className="absolute -left-12 top-0">
