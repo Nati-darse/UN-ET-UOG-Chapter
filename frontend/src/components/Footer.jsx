@@ -70,16 +70,16 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="flex justify-center gap-4">
-            <a href="https://www.instagram.com/una.et.uog?utm_source=qr&igsh=MTh4Y202eDE0NnJn" className="bg-white text-[#002D62] p-2 rounded-full transition-transform hover:scale-110">
+            <a href="https://www.instagram.com/una.et.uog?utm_source=qr&igsh=MTh4Y202eDE0NnJn" target="_blank" rel="noopener noreferrer" className="bg-white text-[#002D62] p-2 rounded-full transition-transform hover:scale-110">
               <FaInstagram className="w-5 h-5" />
             </a>
-            <a href="" className="bg-white text-[#002D62] p-2 rounded-full transition-transform hover:scale-110">
+            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" className="bg-white text-[#002D62] p-2 rounded-full transition-transform hover:scale-110">
               <FaTiktok className="w-5 h-5" />
             </a>
-            <a href="https://www.linkedin.com/company/united-nation-association-of-ethiopia-university-of-gondar-chapter/" className="bg-white text-[#002D62] p-2 rounded-full transition-transform hover:scale-110">
+            <a href="https://www.linkedin.com/company/united-nation-association-of-ethiopia-university-of-gondar-chapter/" target="_blank" rel="noopener noreferrer" className="bg-white text-[#002D62] p-2 rounded-full transition-transform hover:scale-110">
               <FaLinkedin className="w-5 h-5" />
             </a>
-            <a href="https://t.me/UNAETUoG" className="bg-white text-[#002D62] p-2 rounded-full transition-transform hover:scale-110">
+            <a href="https://t.me/UNAETUoG" target="_blank" rel="noopener noreferrer" className="bg-white text-[#002D62] p-2 rounded-full transition-transform hover:scale-110">
               <FaTelegram className="w-5 h-5" />
             </a>
           </div>
