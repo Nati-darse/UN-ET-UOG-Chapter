@@ -24,7 +24,7 @@ const Footer = () => {
 
           {/* Navigation Links */}
           <nav className="flex flex-col md:flex-row md:gap-6 items-center text-md gap-2">
-            <a href="/About" className="hover:text-gray-400">About Us</a>
+            <a href="/about" className="hover:text-gray-400">About Us</a>
             <a href="/teams" className="hover:text-gray-400">Our Teams</a>
             <a href="/Events" className="hover:text-gray-400">Events</a>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdk15_qIaFj-MXxpxd3h5VIRFJ2dYjMHSTaX7W3C_00lJqY0A/viewform" className="hover:text-gray-400">Join Us</a>
