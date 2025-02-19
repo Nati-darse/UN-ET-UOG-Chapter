@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import teamProjects from "../assets/ab.jpeg";
-import workshops from "../assets/ab1.png";
+import teamProjects from "../assets/ab1.png";
+import workshops from "../assets/ab11.png";
 import network from "../assets/network.jpeg";
 
 const cardVariants = {

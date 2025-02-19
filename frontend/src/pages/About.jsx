@@ -21,13 +21,7 @@ const AboutUs = () => {
           </p>
         </div>
 
-        {/* Vision and Mission Section */}
-        <div className="bg-blue-100 p-8 rounded-lg shadow-md text-center">
-          <h3 className="text-3xl font-bold text-blue-900 mb-4">Our Vision</h3>
-          <p className="text-blue-700 text-lg max-w-3xl mx-auto">
-            A future where Ethiopian youth actively engage with the global community, empowered to tackle critical challenges and advance the United Nations' goals for a fair, safe, and more sustainable world.
-          </p>
-        </div>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mt-12">
           {/* Image Section */}
@@ -48,7 +42,20 @@ const AboutUs = () => {
             <Link to="/teams" className="inline-flex items-center mt-6 bg-blue-800 text-white px-6 py-3 rounded-md font-bold hover:bg-blue-700 transition">
               What We Do? <FaArrowRight className="ml-2" />
             </Link>
+           <br />
+            <Link to="/" className="inline-flex items-center mt-6 bg-blue-800 text-white px-6 py-3 rounded-md font-bold hover:bg-blue-700 transition">
+              Meet our leaders  <FaArrowRight className="ml-2" />
+            </Link>
           </div>
+          </div>
+       
+
+                {/* Vision and Mission Section */}
+                <div className="bg-blue-100 p-8 mt-8 rounded-lg shadow-md text-center">
+          <h3 className="text-3xl font-bold text-blue-900 mb-4">Our Vision</h3>
+          <p className="text-blue-700 text-lg max-w-3xl mx-auto">
+            A future where Ethiopian youth actively engage with the global community, empowered to tackle critical challenges and advance the United Nations' goals for a fair, safe, and more sustainable world.
+          </p>
         </div>
 
         {/* Why Join Us Section */}
