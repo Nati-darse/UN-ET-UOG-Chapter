@@ -41,7 +41,7 @@ const Header = () => {
       <div className="flex items-center">
         <img src={logo} alt="UN Logo" className="h-24 " />
         <Link to="/" className="text-2xl font-bold text-blue-500">
-          UN-ET UOG Chapter
+          UNA-ET UOG Chapter
         </Link>
       </div>
 

@@ -17,7 +17,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="text-center md:text-left">
             <Link to="/" className="text-xl font-bold">
-              UN-ET UOG Chapter
+              UNA-ET UOG Chapter
             </Link>
           </div>
 
@@ -128,7 +128,7 @@ const Footer = () => {
 
         {/* Copyright Section */}
         <div className="text-center text-sm text-gray-300 mt-6">
-          © copyright unet-uogcharter.com 2025. All Rights Reserved
+          © copyright unaet-uogcharter.com 2025. All Rights Reserved
         </div>
       </div>
     </footer>

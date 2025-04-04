@@ -14,6 +14,7 @@ import EventsPage from "./pages/Event";
 import AboutPage from "./pages/About";
 import ContactPage from "./pages/contact";
 import Teams from "./pages/Teams";
+import LeadersPage from "./pages/leaders";
 
 const LandingPage = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/teams" element={<Teams/>}/>
+        <Route path="/leaders" element={<LeadersPage/>}/>
       </Routes>
     // </Router>
   );

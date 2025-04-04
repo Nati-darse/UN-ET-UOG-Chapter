@@ -18,7 +18,7 @@ const HeroSection = () => {
         <div className="border-t-4 border-blue-400 w-24 mx-auto md:mx-0 mb-2"></div>
         <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
           Empower Your Future With
-          <span className="block text-blue-800">UN-ET UOG</span>
+          <span className="block text-blue-800">UNA-ET UOG</span>
           <span className="block">Chapter</span>
         </h1>
         <div className="border-b-4 border-blue-400 w-40 mx-auto md:mx-0 mt-2 mb-4"></div>
