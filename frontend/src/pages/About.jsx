@@ -13,11 +13,11 @@ const AboutUs = () => {
         {/* Header Section */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-blue-900 relative inline-block">
-            About <span className="text-yellow-500">UN-ET UOG</span>
+            About <span className="text-yellow-500">UNA-ET UOG</span>
             <div className="absolute left-1/2 transform -translate-x-1/2 w-32 h-1 bg-yellow-500 mt-2"></div>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto mt-4">
-            UN-ET UOG Chapter is committed to instilling United Nations values within the University of Gondar. We empower students through leadership, engagement, and impactful initiatives.
+            UNA-ET UOG Chapter is committed to instilling United Nations values within the University of Gondar. We empower students through leadership, engagement, and impactful initiatives.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ const AboutUs = () => {
               What We Do? <FaArrowRight className="ml-2" />
             </Link>
            <br />
-            <Link to="/" className="inline-flex items-center mt-6 bg-blue-800 text-white px-6 py-3 rounded-md font-bold hover:bg-blue-700 transition">
+            <Link to="/leaders" className="inline-flex items-center mt-6 bg-blue-800 text-white px-6 py-3 rounded-md font-bold hover:bg-blue-700 transition">
               Meet our leaders  <FaArrowRight className="ml-2" />
             </Link>
           </div>
