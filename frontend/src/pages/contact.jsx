@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
@@ -17,6 +18,7 @@ const ContactPage = () => {
 
   return (
     <>
+    <Header/>
     <div className="bg-gray-100 py-12 px-4">
       <div className="container mx-auto max-w-5xl">
         <h1 className="text-4xl font-bold text-center text-blue-900 mb-8">Contact Us</h1>

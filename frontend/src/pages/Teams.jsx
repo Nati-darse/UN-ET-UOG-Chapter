@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import SDJimage from "../assets/teamp1.jpg";
-import projects from "../assets/teamp2.jpg";
-import debate from "../assets/teamp3.jpg";
-import events from "../assets/teamp4.jpg";
-import mun from "../assets/photo_2025-02-10_15-34-59.jpg";
-import social from "../assets/teamp5.jpg";
+import SDJimage from "../assets/teamp1.jpg"; import sd1 from "../assets/sd1.jpg";
+import projects from "../assets/teamp2.jpg";  import projects1 from "../assets/projects1.jpg";
+import debate from "../assets/teamp3.jpg"; import db1 from "../assets/db1.jpg"; import db2 from "../assets/db2.jpg"
+import events from "../assets/teamp4.jpg";  import ev2 from "../assets/ev2.jpg";
+import mun from "../assets/photo_2025-02-10_15-34-59.jpg"; import mnu2 from "../assets/teampmun.jpg";
+import social from "../assets/teamp5.jpg"; import sm1 from "../assets/sm1.jpg"; import sm2 from "../assets/sm2.jpg";
 import { FaTimes } from "react-icons/fa";
 import saron from "../assets/saron.jpg";
 import bezawit from "../assets/bezawit.jpg";
@@ -17,47 +17,46 @@ import dawit from "../assets/dawit.jpg";
 
 
 
-// Updated teams array with team head information
 const teams = [
   {
     name: "SDGs Team – UNA-ET UoG Chapter",
     shortDescription: "Committed to the UN 2030 Agenda, our team raises awareness, advocates for action...",
     description: "Committed to the UN 2030 Agenda, our team raises awareness, advocates for action, and implements initiatives aligned with the 17 SDGs.",
     image: SDJimage,
-    headName: "Dawit Mulugeta", // Team head's name
-    headPosition: "SDGs Ambassadors Team Head", // Team head's position
-    headImage: dawit, // Team head's image
-    extraImages: [social, mun],
+    headName: "Dawit Mulugeta", 
+    headPosition: "SDGs Ambassadors Team Head",
+    headImage: dawit, 
+    extraImages: [SDJimage,sd1],
   },
   {
     name: "Model United Nations (MUN)",
     shortDescription: "Model United Nations (MUN) is an academic simulation where students role-play as delegates...",
     description: "MUN helps develop skills such as research, writing, public speaking, debate, negotiation, and critical thinking.",
     image: mun,
-    headName: "Elias Yeshitila", // Team head's name
-    headPosition: "MUN Team Head", // Team head's position
-    headImage: elias, // Team head's image
-    extraImages: [debate, events],
+    headName: "Elias Yeshitila", 
+    headPosition: "MUN Team Head", 
+    headImage: elias, 
+    extraImages: [mnu2, mun],
   },
   {
     name: "Events Team",
     shortDescription: "Ensures smooth planning and execution of various events.",
     description: "Our team ensures logistics and coordination for impactful events.",
     image: events,
-    headName: " Bezawit Getawey", // Team head's name
-    headPosition: "Event Team Head", // Team head's position
-    headImage: bezawit, // Team head's image
-    extraImages: [mun, social],
+    headName: " Bezawit Getawey", 
+    headPosition: "Event Team Head", 
+    headImage: bezawit, 
+    extraImages: [ev2, ev2],
   },
   {
     name: "Debate Team",
     shortDescription: "The UNA-ET UoG Chapter's debate team is dedicated to empowering voices and sparking change!",
     description: "Join us to think critically, speak boldly, and champion important causes. Your voice matters!",
     image: debate,
-    headName: "Endihnew Mitku ", // Team head's name
-    headPosition: "Debate Team Head", // Team head's position
-    headImage: endihnew, // Team head's image
-    extraImages: [social, mun],
+    headName: "Endihnew Mitku ", 
+    headPosition: "Debate Team Head", 
+    headImage: endihnew, 
+    extraImages: [ db1,  db2],
   },
   
   {
@@ -65,20 +64,20 @@ const teams = [
     shortDescription: "Handles communication and outreach for maximum event exposure.",
     description: "We manage social media strategies to enhance awareness and engagement.",
     image: social,
-    headName: " Saron Tensae", // Team head's name
-    headPosition: "Social Media Manager", // Team head's position
-    headImage: saron, // Team head's image
-    extraImages: [mun, events],
+    headName: " Saron Tensae", 
+    headPosition: "Social Media Manager", 
+    headImage: saron, 
+    extraImages: [sm1, sm2],
   },
   {
     name: "Projects Team",
     shortDescription: "Secures sponsorships and partnerships to enhance event success.",
     description: "Works tirelessly to bring in sponsors and funding for our initiatives.",
     image: projects,
-    headName: "Dibora Abebaw", // Team head's name
-    headPosition: "Project Team Head", // Team head's position
-    headImage: deborah, // Team head's image
-    extraImages: [mun, events],
+    headName: "Dibora Abebaw", 
+    headPosition: "Project Team Head", 
+    headImage: deborah, 
+    extraImages: [projects1, projects1],
   },
 ];
 
